@@ -1,0 +1,20 @@
+{
+  "name": "01-styled-components",
+  "version": "1.0.0",
+  "description": "",
+  "main": "pages/index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [],
+  "author": "Ajar <ajar@artizan.io> (https://artizan.io)",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^2.0.0-beta.37",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "styled-components": "^1.4.4"
+  }
+}

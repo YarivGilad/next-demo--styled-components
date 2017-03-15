@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Griffy|Yanone+Kaffeesatz:400,700');
+
+html,body{
+    height: 100%;
+}
+html{
+    font-size: 10px;
+}
+body{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*border:aqua dashed 3px; */
+    /*color:papayawhip*/
+}
