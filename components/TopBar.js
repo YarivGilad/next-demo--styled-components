@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from './Link';
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import Title from './Title';
@@ -50,21 +50,21 @@ const HList = styled.ul`
   display:flex;
   justify-content:space-between;
 `;
-const Anchor = styled.a`
-  text-decoration:none;
-  cursor:pointer;
+// const Anchor = styled.a`
+//   text-decoration:none;
+//   cursor:pointer;
 
-  &:hover{
-      text-decoration:underline;
-  }
-`;
+//   &:hover{
+//       text-decoration:underline;
+//   }
+// `;
 export default ()=> {
     return(
         <TopBar>
             <Header>I am the top bar</Header>
             <HList>
-                <li><Link href='/'><Anchor>Home</Anchor></Link></li>
-                <li><Link href='/about'><Anchor>About</Anchor></Link></li>
+                <li><Link href='/'>Home</Link></li>
+                <li><Link href='/about'>About</Link></li>
             </HList>
             <RotatingLogo src="/static/logo.svg" alt="logo"/>
         </TopBar>
