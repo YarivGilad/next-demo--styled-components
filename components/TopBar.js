@@ -1,4 +1,4 @@
-
+import Link from 'next/link'
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import Title from './Title';
@@ -17,7 +17,6 @@ const TopBar = styled.div`
     display:flex;
     align-items:center;
     justify-content:space-around;
-
 `;
 
 const Header = styled.h1`
@@ -41,11 +40,32 @@ const RotatingLogo = styled.img`
     height: 50px;
     animation: ${rotate360} 2s linear infinite;
 `;
+const HList = styled.ul`
+  
+  list-style-type: none;
+  font-size:3rem;
+  font-family:'Yanone Kaffeesatz';
+//   background:aqua;
+  width:15rem;
+  display:flex;
+  justify-content:space-between;
+`;
+const Anchor = styled.a`
+  text-decoration:none;
+  cursor:pointer;
 
-export default ({action,subject})=> {
+  &:hover{
+      text-decoration:underline;
+  }
+`;
+export default ()=> {
     return(
         <TopBar>
             <Header>I am the top bar</Header>
+            <HList>
+                <li><Link href='/'><Anchor>Home</Anchor></Link></li>
+                <li><Link href='/about'><Anchor>About</Anchor></Link></li>
+            </HList>
             <RotatingLogo src="/static/logo.svg" alt="logo"/>
         </TopBar>
     )   

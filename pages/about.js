@@ -5,8 +5,8 @@ import Card from '../components/Card';
 import Title from '../components/Title';
 import TopBar from '../components/TopBar';
 
-const App = styled.div`
-    background: lightskyblue;
+const About = styled.div`
+    background: MediumOrchid;
     padding:100px;   
     border-radius:8px;
     display:flex;
@@ -21,17 +21,17 @@ export default class extends Component{
 
     render(){
         return(
-            <App>
+            <About>
                 <Head>
                     <title>Styled Components Example</title>
                     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
                     <link rel="stylesheet" href="/static/globals.css"/>
                 </Head>
 
-                <TopBar></TopBar>
-                <Title primary>I am the App header</Title>
-                <Card action="greet" subject="people"/>
-            </App>
+                <TopBar>Top bar on the about page...</TopBar>
+                <Title primary>I am the About page</Title>
+                <Card action="find" subject="survivors"/>
+            </About>
             )
     }
     
